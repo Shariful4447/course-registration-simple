@@ -1,7 +1,7 @@
 
-import books from './book.json'
+import courses from './data.json'
 
-const fakeData = [...books];
+const fakeData = [...courses];
 
 
 const shuffle = a => {

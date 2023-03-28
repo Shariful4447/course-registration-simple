@@ -2,16 +2,16 @@ import React from 'react';
 import './Book.css'
 
 const Book = (props) => {
-    const {img, name, seller, price}= props.book;
+    const {image, courseName, teacherName, price}= props.book;
     return (
         <div className='book'>
             <div>
-                <img src={img} alt="" />
+                <img src={image} alt="" />
             </div>
             <div>
-            <h1 className='book-name'>{name}</h1>
+            <h1 className='book-name'>{courseName}</h1>
             <br />
-            <p>Teach By: {seller}</p>
+            <p>Teach By: {teacherName}</p>
             <p>Enrolled price: $ {price} </p>
             </div>
             
