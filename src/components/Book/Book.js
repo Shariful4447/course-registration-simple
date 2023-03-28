@@ -2,7 +2,8 @@ import React from 'react';
 import './Book.css'
 
 const Book = (props) => {
-    const {image, courseName, teacherName, price}= props.book;
+    const {courseName, teacherName, price, id, image}= props.book;
+    const buttonStyle = {backgroundColor: 'green', color: 'white'};
     return (
         <div className='book'>
             <div>
@@ -10,9 +11,11 @@ const Book = (props) => {
             </div>
             <div>
             <h1 className='book-name'>{courseName}</h1>
-            <br />
+            
             <p>Teach By: {teacherName}</p>
             <p>Enrolled price: $ {price} </p>
+            <p>Course Id : {id}</p>
+            <button style={buttonStyle}> Enrolled Now : </button>
             </div>
             
             
