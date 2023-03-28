@@ -5,7 +5,7 @@ import './Course.css'
 
 const Course = () => {
     
-    const allData =fakeData;
+    const allData =fakeData.slice(0,12);
     const [books,setBooks]=useState(allData)
     
 
